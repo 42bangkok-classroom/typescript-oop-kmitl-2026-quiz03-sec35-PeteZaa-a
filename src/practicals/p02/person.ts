@@ -9,18 +9,16 @@ export class Person {
         this.age = age
     }   
 
-    setAge(age:number):void {
+    public setAge(age:number):void {
         this.age = age
     }
-    getAge():string {
+    public getAge():string {
         return `${this.age}`
     }
-    getFullName():string {
+    public getFullName():string {
         return `${this.firstname} ${this.lastname}`
     }
-    static COUNTRY(_country:string):string {
-        return "Thailand"
-    }
+    static readonly COUNTRY:string = "Thailand"
 }
 
 
