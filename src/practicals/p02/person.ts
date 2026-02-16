@@ -1,26 +1,31 @@
 export class Person {
-    fisrtname: string
+    firstname: string
     lastname: string
-    age: number = 0
+    private age: number
 
-    constructor(firstname: string, lastname: string, age: number) {
-        this.fisrtname = firstname
+    constructor(firstname: string="", lastname: string="", age: number=0) {
+        this.firstname = firstname
         this.lastname =lastname
         this.age = age
     }   
 
     setAge(age:number) {
-        this.age + age
+        this.age = age
     }
     getAge() {
         return `${this.age}`
     }
     getFullName() {
-        return `${this.fisrtname} ${this.lastname}`
+        return `${this.firstname} ${this.lastname}`
+    }
+    static COUNTRY(country:string="") {
+        return "Thailand"
     }
 }
 
-const person = new Person("Pasa", "er",8) 
-console.log(person.getFullName());
-console.log(person.getAge);
+
+const aaa = new Person("f","e",5)
+console.log(aaa.getFullName());
+console.log(aaa.getAge());
+console.log(Person.COUNTRY());
 
