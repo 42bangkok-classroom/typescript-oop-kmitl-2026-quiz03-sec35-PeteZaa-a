@@ -12,8 +12,8 @@ export class Person {
     public setAge(age:number):void {
         this.age = age
     }
-    public getAge():string {
-        return `${this.age}`
+    public getAge():number {
+        return this.age
     }
     public getFullName():string {
         return `${this.firstname} ${this.lastname}`
