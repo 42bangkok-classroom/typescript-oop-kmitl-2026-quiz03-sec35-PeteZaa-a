@@ -24,8 +24,8 @@ export class Person {
 }
 
 
-const aaa = new Person("f","e",5)
-console.log(aaa.getFullName());
-console.log(aaa.getAge());
-console.log(Person.COUNTRY());
+// const aaa = new Person("f","e",5)
+// console.log(aaa.getFullName());
+// console.log(aaa.getAge());
+// console.log(Person.COUNTRY());
 
