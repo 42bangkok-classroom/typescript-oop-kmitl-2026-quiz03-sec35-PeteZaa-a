@@ -18,7 +18,7 @@ export class Person {
     getFullName() {
         return `${this.firstname} ${this.lastname}`
     }
-    static COUNTRY(country:string) {
+    static COUNTRY(_country:string) {
         return "Thailand"
     }
 }
